@@ -4,6 +4,7 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>How Polygon-Based Collision Detection Handles Complex Game Objects | 999V</title>
+  <meta name="google-site-verification" content="-G-fUFJaN5d_Wr2c-ov4S1rGHtrAOJKsF5M2mo8rfKQ" />
 <meta name="description" content="Discover how polygon collision shapes approximate irregular objects, why they offer greater geometric accuracy, and what trade-offs they introduce compared to simpler shapes.">
 <link rel="canonical" href="">
 <script>document.querySelector('link[rel="canonical"]').href = window.location.href;</script>
@@ -83,6 +84,7 @@ li::before{content:'◈';position:absolute;left:0;color:#d4a017;font-size:1rem;t
 
 <h2>Polygon Shapes and Gameplay Precision</h2>
 <p>The ultimate goal of polygon collision shapes is to close the gap between what players see and what the game detects. When collision boundaries closely follow visible forms, players can rely on their visual judgment to predict whether contacts will occur. They can estimate whether a character fits through a gap, whether a swing will reach a target, or whether an object will land on a ledge by looking at the game rather than guessing about invisible boundaries. Polygon shapes, used where they genuinely improve that visual correspondence, contribute to a more transparent and trustworthy gameplay experience.</p>
+<p>Static shapes are only part of the problem because many interactions happen while objects are in motion. Collision systems therefore need to account for changing positions as characters, items, and other elements move through the game world with <a href="https://movingobjects.22web.org">moving-object collision</a>.</p>
 </div>
 <div class="ft">© 2026</div>
 </body>
